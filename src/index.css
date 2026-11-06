@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+    color: #18181b;
+    background-color: #ffffff;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdf2f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f472b6;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #db2777;
+}
+
+/* Y2K subtle noise or sheen helper */
+.bg-pastel-grid {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(244, 114, 182, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(244, 114, 182, 0.08) 1px, transparent 1px);
+}
